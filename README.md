@@ -2,6 +2,7 @@
 Centric Site
 
 # Code Visualazation
+```mermaid
 graph TD
 
     765["End User<br>External Actor"]
@@ -15,4 +16,5 @@ graph TD
     end
     %% Edges at this level (grouped by source)
     765["End User<br>External Actor"] -->|interacts with| 767["Application Shell &amp; Router<br>React, TypeScript"]
+```
 
