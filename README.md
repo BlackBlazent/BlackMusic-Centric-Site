@@ -1,8 +1,10 @@
 # BlackMusic Official Website
 
-The **BlackMusic Centric Website** is the official digital hub for the BlackMusic platform — a comprehensive ecosystem designed to support users, extension developers, and partners. It serves as the gateway to essential resources including documentation, extension publishing, downloads, and community engagement.
+The **BlackMusic official website** is the official digital hub for the BlackMusic platform — a comprehensive ecosystem designed to support users, extension developers, and partners. It serves as the gateway to essential resources including documentation, extension publishing, downloads, and community engagement.
 
 This website plays a critical role in enabling interaction between the core application, its growing developer community, and end users who rely on BlackMusic for an enriched audio experience.
+
+<div><img src="https://iili.io/3LMiYOB.png"/></div>
 
 ## Code Visualazation
 ```mermaid
