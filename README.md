@@ -1,8 +1,10 @@
-# BlackMusic Official Website
+# BlackMusic Centric Official Website
 
-The **BlackMusic official website** is the official digital hub for the BlackMusic platform — a comprehensive ecosystem designed to support users, extension developers, and partners. It serves as the gateway to essential resources including documentation, extension publishing, downloads, and community engagement.
+The **[BlackMusic](https://github.com/BlackBlazent/BlackMusic) official website** is the official digital hub for the BlackMusic platform — a comprehensive ecosystem designed to support users, extension developers, and partners. It serves as the gateway to essential resources including documentation, extension publishing, downloads, and community engagement.
 
 This website plays a critical role in enabling interaction between the core application, its growing developer community, and end users who rely on BlackMusic for an enriched audio experience.
+
+![Status](https://img.shields.io/badge/status-in--development-yellow)
 
 <div><img src="https://iili.io/3LMiYOB.png"/></div>
 
