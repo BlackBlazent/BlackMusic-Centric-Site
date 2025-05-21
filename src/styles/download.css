@@ -1,0 +1,126 @@
+.download-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.download-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .app-download-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .download-sec-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .download-sec-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  video {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    background-attachment: fixed;
+    height: 100%;
+  }
+  .download-sec-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+  .download-sec-wrapper-context {
+    left: 48px;
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .download-all-platforms-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    top: 36%;
+    cursor: pointer;
+  }
+  .version-latest-banner {
+    width: 100px;
+    height: 100px;
+    /*position: absolute;
+    top: 0;*/
+  }
+  #macOsLatestIndicatorWrapper {
+    top: 0;
+    position: absolute;
+  }
+  #windowsLatestIndicatorWrapper {
+    top: 0;
+    position: absolute;
+  }
+  #linuxLatestIndicatorWrapper {
+    top: 0;
+    position: absolute;
+  }
+  .version-latest-banner-other {
+    width: 100px;
+    height: 100px;
+    /*
+    position: absolute;
+    top: 210px;*/
+  }
+  #androidLatestIndicatorWrapper, #iosLatestIndicatorWrapper {
+    top: 210px;
+    position: absolute;
+  }
+  .download-sec-subtitle {
+    font-size: 18px;
+  }
+  .download-sec-title {
+    font-size: 30px;
+  }
+  .download-all-platforms-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .download-all-platforms-container-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .other-platforms-container-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .download-all-platforms-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .this-platform-card {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+    

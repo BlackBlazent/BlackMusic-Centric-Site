@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navigation and Footer Styles */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #0f172a00;
+  color: white;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0) !important;
+  /*backdrop-filter: blur(10px);*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 48px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0);
+  height: 64px;
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 32px;
+  padding: 10px;
+  align-items: center;
+  background: #382f2f52;
+  border-radius: 20px;
+}
+.nav-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a[href="/download"] {
+  background: #e90b4a65;
+  padding: 8px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+nav a[href="/download"]:hover {
+  background: #e90b4a;
+  transform: scale(1.05);
+}
+
+.site-logo {
+  height: 32px;
+  width: auto;
+  /*filter: brightness(0) invert(1);*/
+  cursor: pointer;
+}
+
+nav .nav-links a.active {
+  color: #fff;
+  position: relative;
+}
+
+nav .nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #dc2626;
+}
+/* Footer styles */
+footer {
+  background: #151515 !important;
+  /*backdrop-filter: blur(10px);*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 48px;
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0);
+  gap: 10px;
+  z-index: 1000;
+  justify-content: space-between;
+  height: 10px;
+}
+.footer-content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .version-number {
+  font-family: 'JetBrains Mono', monospace;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+}
+
+main {
+  /*padding-top: 64px; /* Height of the nav */
+  /*padding-bottom: 48px; /* Height of the footer */
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+/* Ensure the root takes full height */
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}

@@ -1,0 +1,129 @@
+.documentation-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://iili.io/3sd9y57.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+.doc-main {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+.documentation-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px;
+}
+.documentation-header {
+    text-align: left;
+}
+.documentation-title {
+    font-size: 30px;
+    font-weight: 900;
+}
+.documentation-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.doc-docs-card {
+    background: #151515;
+    border-radius: 20px;
+}
+.doc-con-wrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doc-separate-con {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.expand-action-wrapper {
+    padding: 10px;
+    background: #b3b3b300;
+    border-radius: 6px;
+}
+.documentation-content-title {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9;
+}
+.expand-action-wrapper:hover {
+    background: #b3b3b382;
+}
+.expand-action-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.docs-documentation-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.doc-the-icon {
+    width: 100px;
+    height: 100px;
+}
+.doc-the-icon-indicator {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+.line-separator {
+    height: 1px;
+    background: #302e2e;
+}
+.expanded-container-doc-wrapper {
+    padding: 10px;
+}
+.expanded-container-doc-download-wrapper {
+    display: flex;
+    gap: 40px;
+}
+.download-wapper-space {
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+.download-wapper-space:hover {
+    background: #ffffff;
+    color: #000;
+}
+.expanded-container-get-image-starter-wrapper {
+    padding-top: 40px;
+}
+.expanded-container-get-image-starter-figure {
+    padding: 10px;
+}
+.expanded-container-get-image-starter-img {
+    border-radius: 6px;
+}
+.expanded-statement-caption-text {
+    font-size: 20px;
+}
+.expanded-statement {
+    padding: 10px;
+}
+.expanded-statement-text-txt, .introduce-tools-description-text {
+    color: #898585;
+}
+.expanded-container-get-image-starter-title-text {
+    font-size: 18px;
+}

@@ -1,0 +1,166 @@
+/* General Styles */
+.home-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000000ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-background-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.home-content {
+  height: 100%;
+  width: 100%;
+}
+#topBgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.top-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#homeModelBack {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.back-model-wrapper {
+  height: 50%;
+}
+#upperBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.upper-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#appNameHeader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-name-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+#appNameText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* or any color */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#lowerBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.lower-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#codenameHeader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.codename-wrapper {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  padding-top: 200px;
+  text-align: right;
+}
+#codenameText {
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+#homeModel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.home-model-wrapper {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  right: 0;
+  /*-webkit-transform: scaleX(-1);*/
+  transform: scaleX(-1);
+}
+.model-3D {
+  cursor: grab;
+}
+#appCapabilitiesIcon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  left: 50px;
+}
+#capabilitiesStrength {
+  width: 30px;
+  height: 30px;
+}
+#capabilitiesStrengthIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Optimize all animated elements */
+#topBg,
+#homeModelBackImg,
+#upperBgImg,
+#lowerBgImg,
+#homeModelImg,
+#codenameText,
+#appNameText,
+#appCapabilitiesIcon,
+.capabilities-strength-wrapper {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Hardware accelerate the animations */
+.top-bg-wrapper,
+.back-model-wrapper,
+.upper-bg-wrapper,
+.lower-bg-wrapper,
+.home-model-wrapper,
+.codename-wrapper,
+.app-name-wrapper,
+.app-capabilities-icon-container {
+  transform: translateZ();
+}

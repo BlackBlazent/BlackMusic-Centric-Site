@@ -1,0 +1,90 @@
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navigation {
+        overflow: hidden;
+    }
+    .footer-content-left, .footer-content-right {
+       font-size: 10px;
+    }
+    .codename-wrapper #codenameText {
+        font-size: 40px;
+        bottom: 0;
+        position: absolute;
+        left: 130px;
+    }
+    .app-name-wrapper #appNameText {
+        font-size: 40px;
+        top: 250px;
+        position: absolute;
+    }
+    .download-all-platforms-container-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-platforms-container-wrapper {
+        flex-direction: column;
+    }
+    .download-container {
+        overflow-y: auto;
+    }
+    .download-all-platforms-container {
+        overflow-y: auto;
+    }
+    .download-content {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+      }
+      .app-download-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      .download-sec-content {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      .download-sec-background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      .version-latest-banner-other {
+        display: none;
+      }
+      .version-latest-banner {
+        display: none;
+      }
+      .app-capabilities-icon-container {
+        display: none;
+      }
+}
+
+/* Medium devices (tablets, 601px-900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .navigation {
+    background: #000000 !important;
+  }
+  .nav-links {
+    font-size: 14px;
+    background: #00000000 !important;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+  .download-sec-wrapper-context {
+    padding-top: 20px;
+  }
+  .download-all-platforms-container-wrapper {
+    
+  }
+}
+
+/* Large devices (laptops/desktops, 901px-1200px) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {}
+
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {}
