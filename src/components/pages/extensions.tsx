@@ -89,7 +89,7 @@ export default function BlackMusicExtensionStore() {
           <button className="publish-button">PUBLISH</button>
           <div className="user-icon">
             <div className="user-icon-wrapper">
-              <img className="user-icon-img" src="./src/assets/user-icon.png" alt="" />
+              <img className="user-icon-img" src="/assets/user-icon.png" alt="" />
             </div>
           </div>
         </div>

@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const indicatorImage = document.createElement('img');
       indicatorImage.className = 'latest-indicator';
-      indicatorImage.src = './src/assets/latest.gif';
+      indicatorImage.src = '/assets/latest.gif';
       indicatorImage.alt = 'LATEST';
       
       // Apply custom positioning based on which OS card it is

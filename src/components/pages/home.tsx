@@ -18,18 +18,18 @@ const Home = () => {
         <div className="home-background-container">
           <div id="topBgContainer" className="top-background">
             <div className="top-bg-wrapper">
-              <img id="topBg" src="./src/assets/full-sky-mount.png" alt="Full Sky Mount"/>
+              <img id="topBg" src="/assets/full-sky-mount.png" alt="Full Sky Mount"/>
             </div>
           </div>
           <div id="homeModelBack" className="home-model-back">
             <div className="back-model-wrapper">
-              <img id="homeModelBackImg" src="./src/assets/back.model.png" alt="Back Model"/>
+              <img id="homeModelBackImg" src="/assets/back.model.png" alt="Back Model"/>
             </div>
           </div>
           
           <div id="upperBg" className="upper-background">
             <div className="upper-bg-wrapper">
-              <img id="upperBgImg" src="./src/assets/full-upper-mount.png" alt="Upper Mount"/>
+              <img id="upperBgImg" src="/assets/full-upper-mount.png" alt="Upper Mount"/>
             </div>
           </div>
           
@@ -41,7 +41,7 @@ const Home = () => {
           
           <div id="lowerBg" className="lower-background">
             <div className="lower-bg-wrapper">
-              <img id="lowerBgImg" src="./src/assets/full-lower-mount.png" alt="Lower Mount"/>
+              <img id="lowerBgImg" src="/assets/full-lower-mount.png" alt="Lower Mount"/>
             </div>
           </div>
           <div id="codenameHeader" className="codename-header-container">
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           <div id="homeModel" className="home-model-container">
             <div id="model3D" className="home-model-wrapper">
-            <img id="homeModelImg" className="model-3D" src="./src/assets/home.model.png" alt="Home Model" data-glitch-effect data-glitch-interval="3000" data-glitch-duration="600" data-glitch-intensity="7"/>
+            <img id="homeModelImg" className="model-3D" src="/assets/home.model.png" alt="Home Model" data-glitch-effect data-glitch-interval="3000" data-glitch-duration="600" data-glitch-intensity="7"/>
             </div>
           </div>
           <div id="appCapabilitiesIcon" className="app-capabilities-icon-container">

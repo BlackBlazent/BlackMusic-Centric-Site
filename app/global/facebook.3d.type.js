@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Waiting for image to load...');
       imageElement.onload = function() {
         console.log('Image loaded, initializing 3D effect');
-        init3DEffect(container, imageElement, './src/assets/home.model.png', './src/assets/home.model_depth.png');
+        init3DEffect(container, imageElement, '/assets/home.model.png', '/assets/home.model_depth.png');
       };
     } else {
       // Image is already loaded
       console.log('Image already loaded, initializing 3D effect');
-      init3DEffect(container, imageElement, './src/assets/home.model.png', './src/assets/home.model_depth.png');
+      init3DEffect(container, imageElement, '/assets/home.model.png', '/assets/home.model_depth.png');
     }
   });
   

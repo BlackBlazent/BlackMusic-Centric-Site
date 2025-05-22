@@ -38,7 +38,7 @@ const Documentation = () => {
                   <div className="expand-action">
                     <div className="expand-action-wrapper">
                       <div className="expand-action-icon">
-                        <img src="./src/assets/drop-not.png" className="expand-action-icon-img"/>
+                        <img src="/assets/drop-not.png" className="expand-action-icon-img"/>
                       </div>
                     </div>
                   </div>
@@ -178,7 +178,7 @@ const Documentation = () => {
                   <div className="expand-action">
                     <div className="expand-action-wrapper">
                       <div className="expand-action-icon">
-                        <img src="./src/assets/drop-not.png" className="expand-action-icon-img"/>
+                        <img src="/assets/drop-not.png" className="expand-action-icon-img"/>
                       </div>
                     </div>
                   </div>
@@ -668,7 +668,7 @@ const Documentation = () => {
                   <div className="expand-action">
                     <div className="expand-action-wrapper">
                       <div className="expand-action-icon">
-                        <img src="./src/assets/drop-not.png" className="expand-action-icon-img"/>
+                        <img src="/assets/drop-not.png" className="expand-action-icon-img"/>
                       </div>
                     </div>
                   </div>
@@ -808,7 +808,7 @@ const Documentation = () => {
                   <div className="expand-action">
                     <div className="expand-action-wrapper">
                       <div className="expand-action-icon">
-                        <img src="./src/assets/drop-not.png" className="expand-action-icon-img"/>
+                        <img src="/assets/drop-not.png" className="expand-action-icon-img"/>
                       </div>
                     </div>
                   </div>
@@ -948,7 +948,7 @@ const Documentation = () => {
                   <div className="expand-action">
                     <div className="expand-action-wrapper">
                       <div className="expand-action-icon">
-                        <img src="./src/assets/drop-not.png" className="expand-action-icon-img"/>
+                        <img src="/assets/drop-not.png" className="expand-action-icon-img"/>
                       </div>
                     </div>
                   </div>
