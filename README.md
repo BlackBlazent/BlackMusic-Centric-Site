@@ -8,7 +8,7 @@ This website plays a critical role in enabling interaction between the core appl
 
 <div><img src="https://iili.io/3LMiYOB.png"/></div>
 
-## Code Visualazation
+## Code Visual
 ```mermaid
 graph TD
 
