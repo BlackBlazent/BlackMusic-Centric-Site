@@ -39,7 +39,7 @@ function App() {
     <>
       <nav id="navigation-bar" className="navigation">
         <div className="nav-content">
-        <img alt="BLACK MUSIC" className="site-logo" src="./src/assets/bmusic.png" onClick={handleLogoClick} />
+        <img alt="BLACK MUSIC" className="site-logo" src="/assets/bmusic.png" onClick={handleLogoClick} />
           <div className="nav-links">
             <NavLink to="/documentation">Documentation</NavLink>
             <NavLink to="/features">Features</NavLink>
