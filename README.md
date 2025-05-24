@@ -34,6 +34,6 @@ All content and source code in this repository are the intellectual property of 
 For business inquiries, support, or development questions, please contact:
 
 * **Email:** [support@blackmusic.app](mailto:support@blackmusic.app)
-* **Website:** [https://blackmusic.app](https://blackmusic.app)
+* **Website:** [blackmusic.dev](#)
 
 
