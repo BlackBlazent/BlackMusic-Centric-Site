@@ -67,7 +67,7 @@
   }
   
   .publish-button {
-    background-color: #e90b4a65;
+    background-color: #f2455d;
     color: white;
     border: none;
     padding: 4px 16px;
@@ -96,7 +96,7 @@
     padding: 6px;
 }
   .banner {
-    background-color: #0066cc;
+    background-color: #f2455d;
     padding: 12px 24px;
     display: flex;
     align-items: center;
