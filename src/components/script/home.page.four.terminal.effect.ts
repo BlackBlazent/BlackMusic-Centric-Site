@@ -1,9 +1,9 @@
 class TerminalAnimationController {
-    private terminalWrapper: HTMLElement;
-    private terminalContent: HTMLElement;
-    private greenIndicator: HTMLElement;
-    private redIndicator: HTMLElement;
-    private commandTexts: NodeListOf<HTMLParagraphElement>;
+    private terminalWrapper!: HTMLElement;
+    private terminalContent!: HTMLElement;
+    private greenIndicator!: HTMLElement;
+    private redIndicator!: HTMLElement;
+    private commandTexts!: NodeListOf<HTMLParagraphElement>;
     private currentIndex: number = 0;
     private isAnimating: boolean = false;
   
