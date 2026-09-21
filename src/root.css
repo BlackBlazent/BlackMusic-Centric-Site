@@ -6,6 +6,7 @@
   --bm-bg-soft: #0c0c10;
   --bm-surface: #131317;
   --bm-line: rgba(255,255,255,.09);
+  --bm-line-low: rgba(255, 255, 255, 0);
   --bm-line-strong: rgba(255,255,255,.16);
   --bm-text: #f2f1ee;
   --bm-text-mid: #a6a5ac;
@@ -144,7 +145,7 @@ a:focus-visible {
 
 /* ===== Global footer ===== */
 .footer-app {
-  position: fixed; /* relative */
+  position: fixed;
   border-top: 1px solid var(--bm-line);
   background: var(--bm-bg);
   padding: 22px 32px;
@@ -152,7 +153,7 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  /*flex-wrap: wrap;*/
+  flex-wrap: none;
 }
 .footer-content-left {
   display: flex;

@@ -7,11 +7,13 @@ import '../../styles/download.css';
  * project URLs on each platform.
  */
 const STORE_LINKS = {
-  github: 'https://github.com/REPLACE_ME/blackmusic/releases',
-  sourceforge: 'https://sourceforge.net/projects/REPLACE_ME/',
+  microsoft: 'https://www.microsoft.com/store/productId/9NBLGGH4QZQZ',
+  github: 'https://github.com/BlackBlazent/BlackMusic/releases/',
+  sourceforge: 'https://sourceforge.net/projects/blackmusic/',
   softonic: 'https://REPLACE_ME.en.softonic.com/',
-  itch: 'https://REPLACE_ME.itch.io/blackmusic',
+  itch: 'https://jednaz-lonestamp.itch.io/blackmusic',
   softpedia: 'https://www.softpedia.com/get/REPLACE_ME/',
+  Uptodown: 'https://www.uptodown.com/get/REPLACE_ME/',
 };
 
 type OS = 'windows' | 'macos' | 'linux';
@@ -45,6 +47,10 @@ export const Download = () => {
         </p>
 
         <div className="dl-stores">
+          <a className="dl-store-card" href={STORE_LINKS.microsoft} target="_blank" rel="noreferrer">
+            <span className="dl-store-name">Microsoft Store</span>
+            <span className="dl-store-note">Windows app</span>
+          </a>
           <a className="dl-store-card" href={STORE_LINKS.github} target="_blank" rel="noreferrer">
             <span className="dl-store-name">GitHub Releases</span>
             <span className="dl-store-note">source + signed installers</span>
@@ -63,6 +69,10 @@ export const Download = () => {
           </a>
           <a className="dl-store-card" href={STORE_LINKS.softpedia} target="_blank" rel="noreferrer">
             <span className="dl-store-name">Softpedia</span>
+            <span className="dl-store-note">listing</span>
+          </a>
+          <a className="dl-store-card" href={STORE_LINKS.Uptodown} target="_blank" rel="noreferrer">
+            <span className="dl-store-name">Uptodown</span>
             <span className="dl-store-note">listing</span>
           </a>
         </div>

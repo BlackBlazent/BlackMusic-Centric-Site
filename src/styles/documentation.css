@@ -1,129 +1,155 @@
-.documentation-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://iili.io/3sd9y57.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-y: auto;
+.doc-container {
+  min-height: 100vh;
+  background: var(--bm-bg);
+  padding-top: 68px;
 }
-.doc-main {
-    width: 100%;
-    height: 100%;
-    padding-top: 100px;
+
+.doc-hero {
+  border-bottom: 1px solid var(--bm-line-low); /*1px solid var(--bm-line)*/
+  padding: 76px 32px 0;
+  text-align: center;
+  background:
+    radial-gradient(600px 380px at 50% 0%, rgba(255, 47, 94, .1), transparent 65%),
+    var(--bm-bg);
 }
-.documentation-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 60px;
+.doc-kicker {
+  font-size: 12.5px;
+  color: var(--bm-pink-soft);
+  margin: 0 0 16px;
 }
-.documentation-header {
-    text-align: left;
+.doc-title {
+  font-family: 'Archivo', system-ui, sans-serif;
+  font-size: clamp(30px, 4.4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  max-width: 18ch;
+  margin: 0 auto 16px;
+  color: var(--bm-text);
 }
-.documentation-title {
-    font-size: 30px;
-    font-weight: 900;
+.doc-sub {
+  font-size: 16px;
+  color: var(--bm-text-mid);
+  max-width: 50ch;
+  margin: 0 auto 34px;
+  line-height: 1.6;
 }
-.documentation-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+
+.doc-tabs {
+  display: inline-flex;
+  gap: 4px;
+  border: 1px solid var(--bm-line-strong);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: -1px;
 }
-.doc-docs-card {
-    background: #151515;
-    border-radius: 20px;
+.doc-tab {
+  border: none;
+  background: transparent;
+  color: var(--bm-text-mid);
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 7px;
+  cursor: pointer;
 }
-.doc-con-wrapper {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.doc-tab.active {
+  background: var(--bm-text);
+  color: var(--bm-bg);
 }
-.doc-separate-con {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+
+.doc-body {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 52px 32px 120px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 64px;
+  align-items: start;
 }
-.expand-action-wrapper {
-    padding: 10px;
-    background: #b3b3b300;
-    border-radius: 6px;
+@media (max-width: 860px) {
+  .doc-body { grid-template-columns: 1fr; gap: 32px; }
 }
-.documentation-content-title {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    line-height: 0.9;
+
+.doc-sidebar { position: relative; top: 88px; } /*sticky*/
+.doc-sidebar ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.doc-sidebar a {
+  display: block;
+  font-size: 13.5px;
+  color: var(--bm-text-dim);
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
 }
-.expand-action-wrapper:hover {
-    background: #b3b3b382;
+.doc-sidebar a:hover { color: var(--bm-text); border-left-color: var(--bm-pink); background: rgba(255, 255, 255, .02); }
+@media (max-width: 860px) {
+  .doc-sidebar { position: static; }
+  .doc-sidebar ul { flex-direction: row; flex-wrap: wrap; gap: 8px; }
+  .doc-sidebar a { border: 1px solid var(--bm-line); border-radius: 100px; padding: 6px 12px; }
 }
-.expand-action-icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+
+.doc-content { max-width: 760px; min-width: 0; }
+.doc-content section { margin-bottom: 56px; scroll-margin-top: 90px; }
+.doc-content h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bm-text);
+  margin: 0 0 14px;
+  letter-spacing: -.01em;
 }
-.docs-documentation-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.doc-content p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--bm-text-mid);
+  margin: 0 0 14px;
 }
-.doc-the-icon {
-    width: 100px;
-    height: 100px;
+.doc-content code {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 13.5px;
+  color: var(--bm-pink-soft);
+  background: rgba(255, 255, 255, .04);
+  padding: 1px 6px;
+  border-radius: 4px;
 }
-.doc-the-icon-indicator {
-    border-radius: 10px;
-    width: 100px;
-    height: 100px;
+.doc-content a { color: var(--bm-pink-soft); text-decoration: underline; text-underline-offset: 2px; }
+.doc-content ul { margin: 0 0 14px; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.doc-content li { font-size: 15.5px; line-height: 1.6; color: var(--bm-text-mid); }
+.doc-content b { color: var(--bm-text); font-weight: 600; }
+
+.doc-code {
+  display: block;
+  background: var(--bm-surface);
+  border: 1px solid var(--bm-line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--bm-pink-soft);
+  overflow-x: auto;
+  white-space: pre;
+  margin: 0 0 14px;
 }
-.line-separator {
-    height: 1px;
-    background: #302e2e;
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 20px;
+  font-size: 14px;
 }
-.expanded-container-doc-wrapper {
-    padding: 10px;
+.doc-table th, .doc-table td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--bm-line);
+  color: var(--bm-text-mid);
+  vertical-align: top;
 }
-.expanded-container-doc-download-wrapper {
-    display: flex;
-    gap: 40px;
+.doc-table th {
+  color: var(--bm-text);
+  font-weight: 600;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
 }
-.download-wapper-space {
-    padding: 10px;
-    border-radius: 10px;
-    background: #000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-}
-.download-wapper-space:hover {
-    background: #ffffff;
-    color: #000;
-}
-.expanded-container-get-image-starter-wrapper {
-    padding-top: 40px;
-}
-.expanded-container-get-image-starter-figure {
-    padding: 10px;
-}
-.expanded-container-get-image-starter-img {
-    border-radius: 6px;
-}
-.expanded-statement-caption-text {
-    font-size: 20px;
-}
-.expanded-statement {
-    padding: 10px;
-}
-.expanded-statement-text-txt, .introduce-tools-description-text {
-    color: #898585;
-}
-.expanded-container-get-image-starter-title-text {
-    font-size: 18px;
-}
+.doc-table td:first-child { color: var(--bm-text); font-weight: 600; white-space: nowrap; }

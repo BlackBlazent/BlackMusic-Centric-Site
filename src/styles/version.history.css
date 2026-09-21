@@ -1,417 +1,95 @@
-/* version.history.css */
+.vh-container {
+  min-height: 100vh;
+  background: var(--bm-bg);
+  padding-top: 68px;
+}
 
-/* Base styles */
-  .ver-history-page {
-    background-image: url("https://iili.io/3sd9y57.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    position: fixed;
-    height: 100%;
-  }
-  
-  /* Table container */
-  .ver-table-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 100px;
-  }
-  
-  .table-wrapper {
-    /*width: 100%;*/
-    padding: 40px;
-  }
-  
-  /* Table head */
-  .table-head {
-    width: 100%;
-  }
-  
-  .head-row {
-    display: flex;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .head-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .head-text {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-    letter-spacing: 1px;
-    z-index: 1;
-    position: relative;
-  }
-  
-  /* Table body */
-  .table-body {
-    width: 100%;
-  }
-  
-  .body-row {
-    display: flex;
-    width: 100%;
-    height: 180px; /* Fixed height to match the design */
-  }
-  
-  .body-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Background images and overlays for cells */
-  .body-cell::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: -1;
-  }
-  
-  /* Column widths */
-  .icon-col {
-    width: 25%;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
-    background-image: url("https://img.freepik.com/premium-photo/girl-wearing-headphones-generative-ai-art_158863-16095.jpg");
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  .icon-app-img {
-    width: 25%;
-    height: 50%;
-    background-image: url("https://iili.io/3PiYGKg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  .icon-col::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 0;
-  }
-  .version-col {
-    width: 25%;
-    /*background-color: rgba(43, 0, 79, 0.7);*/
-    background-image: url("https://img.freepik.com/free-vector/realistic-hot-pink-girl-illustration_52683-140445.jpg?uid=R54802347&ga=GA1.1.1324284911.1721478908&semt=ais_hybrid&w=740");
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  
-  .version-col::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 0;
-  }
-  .app-version-img {
-    width: 25%;
-    height: 50%;
-    background-image: url("https://iili.io/3Pi1aGS.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  .features-col {
-    width: 25%;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
-    background-image: url("https://img.freepik.com/free-photo/3d-cartoon-character-djing-party_23-2151688549.jpg?uid=R54802347&ga=GA1.1.1324284911.1721478908&semt=ais_hybrid&w=740");
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  
-  .features-col::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 0;
-  }
-  .features-col {
-    width: 25%;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
-    background-image: url("https://img.freepik.com/free-photo/3d-cartoon-character-djing-party_23-2151688549.jpg?uid=R54802347&ga=GA1.1.1324284911.1721478908&semt=ais_hybrid&w=740");
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  
-  .date-col {
-    width: 25%;
-    /*background-color: rgba(43, 0, 79, 0.7);*/
-    background-image: url("https://img.freepik.com/free-photo/anime-like-illustration-girl-portrait_23-2151835177.jpg?uid=R54802347&ga=GA1.1.1324284911.1721478908&semt=ais_hybrid&w=740");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-    height: 50%;
-  }
-  
-  .date-col::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    z-index: 0;
-  }
-  
-  /* Icon styling */
-  .icon-wrapper {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid rgba(58, 159, 255, 0.7);
-    box-shadow: 0 0 15px rgba(58, 159, 255, 0.7);
-  }
-  
-  .version-icon {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Version styling */
-  .version-text {
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(58, 159, 255, 0.8);
-  }
-  
-  /* Features styling */
-  .features-text {
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  
-  /* Date styling */
-  .date-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .release-date {
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-shadow: 0 0 10px rgba(255, 58, 140, 0.8);
-  }
-  
-  .release-time {
-    color: #FFFFFF;
-    font-size: 18px;
-    opacity: 0.9;
-    text-shadow: 0 0 8px rgba(255, 58, 140, 0.7);
-  }
-  
-  /* Neon glow effects */
-  .icon-col .head-text {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-  }
-  
-  .version-col .head-text {
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(58, 159, 255, 0.8);
-  }
-  
-  .features-col .head-text {
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  
-  .date-col .head-text {
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(255, 58, 140, 0.8);
-  }
-  
-  /* Color overlays for rows */
-  .body-row:nth-child(odd) .icon-col {
-    background: linear-gradient(to right, rgba(58, 159, 255, 0.2), rgba(0, 0, 0, 0.7));
-  }
-  
-  .body-row:nth-child(odd) .version-col {
-    background: linear-gradient(to right, rgba(94, 58, 255, 0.223), rgba(58, 160, 255, 0.284));
-  }
-  
-  .body-row:nth-child(odd) .features-col {
-    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));*/
-  }
-  .background-t {
-    width: 25%;
-    height: 50%;
-    background-image: url("https://iili.io/3Pihksj.jpg") !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  .body-row:nth-child(odd) .date-background-t { /*date-col */
-    /*background: linear-gradient(to right, rgba(255, 58, 140, 0.3), rgba(255, 0, 128, 0.3));*/
-  }
-  .date-background-t {
-    width: 25%;
-    height: 50%;
-    background-image: url("https://iili.io/3PitsTX.jpg") !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px); /* small blur */
-    -webkit-backdrop-filter: blur(4px); /* Safari support */
-  }
-  .body-row:nth-child(even) .icon-col {
-    background: linear-gradient(to right, rgba(58, 159, 255, 0.3), rgba(0, 0, 0, 0.8));
-  }
-  
-  .body-row:nth-child(even) .version-col {
-    background: linear-gradient(to right, rgba(95, 58, 255, 0.4), rgba(58, 159, 255, 0.4));
-  }
-  
-  .body-row:nth-child(even) .features-col {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
-  }
-  
-  .body-row:nth-child(even) .date-col {
-    background: linear-gradient(to right, rgba(255, 58, 140, 0.4), rgba(255, 0, 128, 0.4));
-  }
-  
-  /* Overlay images for each column */
-  .icon-col::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/images/palm-tree-overlay.jpg') center center;
-    background-size: cover;
-    opacity: 0.3;
-    mix-blend-mode: screen;
-    z-index: -1;
-  }
-  
-  .version-col::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/images/person-sunglasses.jpg') center center;
-    background-size: cover;
-    opacity: 0.3;
-    mix-blend-mode: screen;
-    z-index: -1;
-  }
-  
-  .features-col::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/images/person-glasses.jpg') center center;
-    background-size: cover;
-    opacity: 0.3;
-    mix-blend-mode: screen;
-    z-index: -1;
-  }
-  
-  .date-col::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/images/person-colorful.jpg') center center;
-    background-size: cover;
-    opacity: 0.3;
-    mix-blend-mode: screen;
-    z-index: -1;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .head-row, .body-row {
-      flex-direction: column;
-    }
-    
-    .head-cell, .body-cell {
-      width: 100%;
-    }
-    
-    .body-row {
-      height: auto;
-      margin-bottom: 20px;
-    }
-    
-    .body-cell {
-      padding: 15px 0;
-    }
-  }
+.vh-hero {
+  padding: 76px 32px 60px;
+  text-align: center;
+  border-bottom: 1px solid var(--bm-line);
+  background:
+    radial-gradient(600px 380px at 50% 0%, rgba(67, 216, 207, .1), transparent 65%),
+    var(--bm-bg);
+}
+.vh-kicker { font-size: 12.5px; color: var(--bm-pink-soft); margin: 0 0 16px; }
+.vh-title {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(30px, 4.4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  max-width: 18ch;
+  margin: 0 auto 16px;
+  color: var(--bm-text);
+}
+.vh-sub { font-size: 16px; color: var(--bm-text-mid); max-width: 50ch; margin: 0 auto; }
+
+.vh-timeline {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 64px 32px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.vh-entry {
+  border-left: 2px solid var(--bm-line-strong);
+  padding-left: 30px;
+  position: relative;
+}
+.vh-entry::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bm-pink);
+  box-shadow: 0 0 0 4px var(--bm-bg), 0 0 12px var(--bm-pink);
+}
+.vh-entry.retired::before { background: var(--bm-text-dim); box-shadow: 0 0 0 4px var(--bm-bg); }
+
+.vh-entry-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.vh-entry-head h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 24px;
+  font-weight: 750;
+  color: var(--bm-text);
+  margin: 0;
+}
+.vh-meta { font-size: 12.5px; color: var(--bm-text-dim); }
+.vh-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+.vh-badge.current { background: rgba(255, 47, 94, .15); color: var(--bm-pink-soft); }
+.vh-badge.retired { background: rgba(255, 255, 255, .06); color: var(--bm-text-dim); }
+
+.vh-entry-intro {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--bm-text-mid);
+  max-width: 60ch;
+  margin: 0 0 24px;
+}
+
+.vh-fix-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+.vh-fix-list h3 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--bm-text);
+  margin: 0 0 6px;
+}
+.vh-fix-list p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--bm-text-mid);
+  margin: 0;
+  max-width: 62ch;
+}
